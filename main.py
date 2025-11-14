@@ -35,7 +35,11 @@ def gennerate_canvas():
             brush.border_size = b
             
     elif num_ch in [5, 6, 7]:
-        for i in range(random.randint(25, 35)):
+        if num_ch == 7:
+            a_ = 15
+        else:
+            a_ = random.randint(25, 35)
+        for i in range(a_):
             brush.draw_inside()
             s, o, l, c, b = painter.gennerate_solcb()
             brush.size = s
@@ -103,7 +107,7 @@ elif num_ch == 6:
     gennerate_canvas()
     
 elif num_ch == 7:
-    brush.num_sides = 7
+    brush.num_sides = 5
     gennerate_canvas()
     
 elif num_ch == 8:
