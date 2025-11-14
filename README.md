@@ -10,21 +10,12 @@ The program is organized using object-oriented programming (OOP) with two main c
 ## Project Structure
 
 turtle_graphics_assignment/
-├── pycache/             # Auto-generated Python cache
-├── canvas/              # Example generated artworks
-│   ├── art1.jpg
-│   ├── art2.jpg
-│   ├── art3.jpg
-│   ├── art4.jpg
-│   ├── art5.jpg
-│   ├── art6.jpg
-│   ├── art7.jpg
-│   ├── art8.jpg
-│   └── art9.jpg
-├── lib.py               # Stores Brush & Painter classes
-├── main.py              # Main program
-├── README.md            # Documentation
-└── test.py              # Code preview & testing
+pycache/             # Auto-generated Python cache
+canvas/              # Store .jpg examples of generated artworks
+lib.py               # Stores Brush & Painter classes
+main.py              # Main program
+README.md            # Documentation
+test.py              # Code preview & testing
 
 ---
 
@@ -34,6 +25,7 @@ turtle_graphics_assignment/
 - `draw()` – Draws a polygon using the current size, color, location, and orientation. 
 - `draw_inside()` – Draws a polygon, then two smaller nested polygons inside it. 
 - `setup(speed, bg, tracer, colormode)` – Configures turtle settings (speed, background color, tracer, and color mode).  
+
 **Painter** – Controls randomization, Canvas painting choice, Drawing preperation.
 - `painter_choice()` – Asks the user to choose an art mode (1–9).  
 - `drawing_prep()` – Generates the first set of random drawing parameters.  
