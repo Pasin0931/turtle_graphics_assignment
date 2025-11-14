@@ -49,9 +49,11 @@ class Painter:
         while True:
             try:
                 in_ = int(input("Which art do you want to generate? Enter a number between 1 to 9 inclusive: "))
-                if in_ > 9 and in_ < 1:
+                if in_ > 9 or in_ < 1:
                     print("Invalid input. Please enter a number between 1-9")
-                return in_
+                    continue
+                else:
+                    return in_
             except ValueError:
                 print("Invalid input. Please enter a number between 1-9")
 

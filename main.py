@@ -22,6 +22,7 @@ def gennerate_canvas():
             brush.location = l
             brush.color = c
             brush.border_size = b
+            
     elif num_ch == 4:
         for i in range(random.randint(25, 35)):
             brush.draw()
@@ -32,6 +33,7 @@ def gennerate_canvas():
             brush.location = l
             brush.color = c
             brush.border_size = b
+            
     elif num_ch in [5, 6, 7]:
         for i in range(random.randint(25, 35)):
             brush.draw_inside()
@@ -42,10 +44,38 @@ def gennerate_canvas():
             brush.color = c
             brush.border_size = b
         
-    # elif num_ch == 8:
+    elif num_ch == 8:
+        for i in range(random.randint(25, 35)):
+            brush.draw_inside()
+            s, o, l, c, b = painter.gennerate_solcb()
+            brush.num_sides = painter.random_shape()
+            brush.size = s
+            brush.orientation = o
+            brush.location = l
+            brush.color = c
+            brush.border_size = b
         
-        
-    # elif num_ch == 9:
+    elif num_ch == 9:
+        for i in range(random.randint(25, 35)):
+            here_ = random.randint(1,2)
+            if here_ == 1:
+                brush.draw()
+                s, o, l, c, b = painter.gennerate_solcb()
+                brush.num_sides = painter.random_shape()
+                brush.size = s
+                brush.orientation = o
+                brush.location = l
+                brush.color = c
+                brush.border_size = b
+            elif here_ == 2:
+                brush.draw_inside()
+                s, o, l, c, b = painter.gennerate_solcb()
+                brush.num_sides = painter.random_shape()
+                brush.size = s
+                brush.orientation = o
+                brush.location = l
+                brush.color = c
+                brush.border_size = b
 
 print("Gennerating Canvas . . .")
 
@@ -76,7 +106,11 @@ elif num_ch == 7:
     brush.num_sides = 7
     gennerate_canvas()
     
-# eli
+elif num_ch == 8:
+    gennerate_canvas()
+    
+elif num_ch == 9:
+    gennerate_canvas()
     
 print("Canvas Gennerated !")
 
