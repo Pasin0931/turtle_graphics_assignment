@@ -10,24 +10,21 @@ The program is organized using object-oriented programming (OOP) with two main c
 ## Project Structure
 
 turtle_graphics_assignment/
-│
-├── pycache/ # Auto-generated Python cache
-│
-├── canvas/ # Example generated artworks
-│ ├── art1.jpg
-│ ├── art2.jpg
-│ ├── art3.jpg
-│ ├── art4.jpg
-│ ├── art5.jpg
-│ ├── art6.jpg
-│ ├── art7.jpg
-│ ├── art8.jpg
-│ └── art9.jpg
-│
-├── lib.py # Stores Brush & Painter classes
-├── main.py # Main program
-├── README.md # Documentation
-└── test.py # Code preview & testing
+├── pycache/             # Auto-generated Python cache
+├── canvas/              # Example generated artworks
+│   ├── art1.jpg
+│   ├── art2.jpg
+│   ├── art3.jpg
+│   ├── art4.jpg
+│   ├── art5.jpg
+│   ├── art6.jpg
+│   ├── art7.jpg
+│   ├── art8.jpg
+│   └── art9.jpg
+├── lib.py               # Stores Brush & Painter classes
+├── main.py              # Main program
+├── README.md            # Documentation
+└── test.py              # Code preview & testing
 
 ---
 
