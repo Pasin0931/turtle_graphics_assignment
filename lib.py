@@ -23,17 +23,7 @@ class Brush:
         turtle.penup()
         
     def draw_inside(self):
-        turtle.penup()
-        turtle.goto(self.location[0], self.location[1])
-        turtle.setheading(self.orientation)
-        turtle.color(self.color)
-        turtle.pensize(self.border_size)
-        turtle.pendown()
-        for _ in range(self.num_sides):
-            turtle.forward(self.size)
-            turtle.left(360/self.num_sides)
-        turtle.penup()
-        
+        self.draw()
         for i in range(0, 2):
             reduction_ratio = 0.618
             turtle.forward(self.size*(1-reduction_ratio)/2)
@@ -75,7 +65,7 @@ class Painter:
         return num_sides, size, orientation, location, color, border_size
     
     def random_shape(self):
-        return random.randint(3, 5) # triangle, square, or pentagon
+        return random.randint(3, 5)
         
     def random_size(self):
         return random.randint(50, 150)
