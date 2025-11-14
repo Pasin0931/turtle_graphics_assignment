@@ -70,7 +70,7 @@ class Painter:
         size = self.random_size()
         orientation = self.random_orientation()
         location = self.random_loc()
-        color = self.get_new_color()
+        color = self.random_color()
         border_size = self.random_border()
         return num_sides, size, orientation, location, color, border_size
     
@@ -86,8 +86,16 @@ class Painter:
     def random_loc(self):
         return [random.randint(-200, 200), random.randint(-200, 200)]
     
-    def get_new_color(self):
+    def random_color(self):
         return (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
     
     def random_border(self):
         return random.randint(1, 10)
+    
+    def gennerate_solcb(self):
+        s = self.random_size()
+        o = self.random_orientation()
+        l = self.random_loc()
+        c = self.random_color()
+        b = self.random_border()
+        return s, o, l, c, b
