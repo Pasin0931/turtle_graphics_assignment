@@ -9,7 +9,6 @@ The program is organized using object-oriented programming (OOP) with two main c
 
 ## Project Structure
 
-- turtle_graphics_assignment/
 - pycache/             # Auto-generated Python cache
 - canvas/              # Store .jpg examples of generated artworks
 - lib.py               # Stores Brush & Painter classes
